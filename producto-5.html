@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adara</title>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+        <script src="https://kit.fontawesome.com/bb6fea5183.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/producto.css">
+        <link rel="stylesheet" href="css/perlas.css">
+        <link rel="stylesheet" href="css/fecha-modal.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    </head>
+
+<body>
+
+    <div class="barra-navegacion  barra-navegacion-secciones">
+
+        <div class="bar-cont contenedor">
+        <!-- <i id="open-nav" class="fa-solid fa-bars"></i>
+          --> 
+          <a class="delete" href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+
+        <nav class="nav-header">
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a class="estado" href="catalogo.html">Catalogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <a href="index.html"><img class="logo" src="img/logo-cafe.svg" alt=""></a>
+
+        <a class="acc-catalogo" href="catalogo.html"><img src="img/icono-catalogo-cafe.svg" alt=""></a>
+    </div>
+    </div>
+
+    <section class="producto-individual contenedor">
+        <div class="cont-prod-individual">
+            <div class="prod-individual">
+
+                <div class="img-producto">
+                <img data-aos="fade-up" src="https://i.ibb.co/4ZcZ91W/1-1.jpg" alt="">
+                <img data-aos="fade-up" src="https://i.ibb.co/7G23w7P/1-2.jpg" alt="">
+                <img data-aos="fade-up" src="https://i.ibb.co/Krxwgcx/1.jpg" alt="">
+                
+                </div>
+
+                <div class="texto-junto">
+                <div class="texto-individual">
+                    <input id="Nombre" class="nombre" readonly value="Love" type="text">
+                    <textarea class="descripcion" id="Descripcion">Brazalete compuesto por 2 piedras, la piedra de cora rojito y la piedra de inicial <b> ambas brillan en la oscuridad</b> con una cuerda tipo elastico.</textarea>
+                    <input id="Precio"  class="" readonly value="Costo: $2.00" type="text">
+                </div>
+                
+                <div class="form">
+                     <h2 data-aos="fade-up" class="nombre">Love</h2>
+                     <p data-aos="fade-up" class="descripcion">Brazalete compuesto por 2 piedras, la piedra de cora rojito y la piedra de inicial <b> ambas brillan en la oscuridad</b> con una cuerda tipo elastico.</p>
+                     <p data-aos="fade-up" class="precio">Costo: $2.00</p>
+                     <div class="cont-form">
+                        <div class="seccion">
+                           <input data-aos="fade-up" type="text" id="comprador" class="form-input" placeholder=" ">
+                           <label for="comprador"
+                           class="form-label">Escribe tu nombre</label>
+                        </div>
+                    
+       
+                        <div class="seccion">
+                           <input data-aos="fade-up" type="number" id="numero" class="form-input" placeholder=" ">
+                           <label for="numero"
+                           class="form-label">Numero de pulseras con este diseño</label>
+                        </div>
+       
+                        <!-- <h2 class="precio-personalizado">Precio por Unidad: $1.00</h2> -->
+                        <div class="separar">
+                            <button data-aos="fade-up" id="Enviar-2" class="Enviar"><i class="fa-brands fa-whatsapp"> </i>Enviar compra
+                                </i></button>
+                        </div>
+                        <div>
+                            <button data-aos="fade-up" id="cancelar" class="cancelar">Cancelar compra</i></button>
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="modal-fecha" class="modal-fecha">
+            <div id="modal-cont-fecha" class="cont-modal-fecha">
+                <img src="img/logo-cafe.svg" alt="">
+                <div class="texto-fecha">
+                    <h2 data-aos="fade-up">¡Gracias por elegir Adara!</h2>
+                    <p data-aos="fade-up">Puedes llegar a recoger tu pulsera el dia 21 de Julio en el puesto llamado Adara, muchas gracias por
+                        tu compra.</p>
+                    <button data-aos="fade-up" id="Enviar-2" class="Enviar"><i class="fa-brands fa-whatsapp"> </i>Continuar Compra</i></button>
+    
+                </div>
+            </div>
+        </div>
+
+    <div id="modal-cancelar" class="modal-cancelar">
+        <div id="modal" class="cont-modal-cancelar contenedor">
+            <div>
+            <h2>¿Seguro que deseas cancelar tu compra?</h2>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <div class="botones">
+                <button id="seguir" class="verde">Seguir</button>
+            <button id="cancelar-compra" class="rojo">Cancelar</button>
+        </div>
+        </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor-footer contenedor">
+            
+            <h2>Navegador</h2>
+
+            <nav class="nav-footer">
+                
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            
+            <h2>Redes Sociales</h2>
+
+            <div class="redes">
+               
+                <a href="https://api.whatsapp.com/send?phone=+50369694477&text="> <i class="fa-brands fa-whatsapp"></i></i></a>
+                <a href="https://www.instagram.com/adarapulseras/"> <i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <p>Derechos Reservados ©Adara</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/cancelar.js"></script>
+    <script src="js/mensaje-ws.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+</body>

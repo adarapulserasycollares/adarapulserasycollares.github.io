@@ -1,0 +1,80 @@
+.nombre-comprador{
+    margin-top: 8rem;
+}
+
+.pregunta{
+    font-size: 1.5rem;
+    margin-top:5rem;
+    text-align: center;
+}
+
+.contenedor-personalizado{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: 2rem;
+}
+
+.contenedor-personalizado .elemento{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.contenedor-personalizado .elemento img{
+    width: 50%;
+    margin: 2rem auto;
+    object-fit: cover;
+}
+
+.contenedor-personalizado .elemento .selector{
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-personalizado .elemento .selector input{
+    margin-right: 0.5rem;
+}
+
+.personalizado .inicial div{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.personalizado .inicial select{
+   border: 1px rgb(210, 210, 210) solid;
+   outline: none;
+   padding: 1rem 1.5rem;
+   border-radius: 1rem;
+   color: rgb(173, 173, 173);
+   font-weight: 200;
+}
+
+.personalizado .inicial option{
+    border: 1px rgb(210, 210, 210) solid;
+    outline: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    color: rgb(95, 95, 95);
+    font-weight: 200;
+ }
+
+.inicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.numero{
+    margin-bottom: 5rem;
+}
+
+.aviso{
+    font-weight: 600;
+    font-size: 1.1rem;
+}

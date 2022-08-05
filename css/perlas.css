@@ -1,0 +1,325 @@
+:root {
+    --cafe: #4E3A3A;
+    --cafe-oscuro: #370808;
+    --aqua: #15E097;
+}
+
+.titulo-seccion{
+    color: var(--cafe-oscuro);
+    font-size: 1.7rem;
+}
+
+.limite{
+    font-size: 1rem;
+    color: #370808;
+    margin: 0 auto 2rem;
+    font-weight: 600;
+}
+
+.descripcion-seccion{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--cafe);
+}
+
+.texto-personalizar{
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+
+.slider-perla .slider{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.slider-perla .slider .slider-content{
+    border: solid 1px rgb(238, 238, 238);
+    margin-right: 1rem;
+    border-radius: 1rem;
+    padding: 2rem 3rem 0rem 3rem;
+    min-width: 27rem;
+    margin-bottom: 2rem;
+    scroll-snap-align: center;
+    height: 31rem;
+}
+
+
+.cont-cuerdas {
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    height: 45rem;
+    margin-bottom: 2rem;
+}
+
+.cont-cuerdas .tarjeta-cuerda{
+    width: 60rem;
+    height: auto;
+    padding: 2rem 6.5rem 6.5rem 6.5rem;
+    border: solid 1px #eeeeee;
+    border-radius: 2rem;
+    scroll-snap-align: center;
+    margin-bottom: 5rem;
+    /* box-shadow: 0px 16px 10px 0px #ebebeb67; */
+}
+
+.slider .slider-content .img-perla{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50rem;
+    overflow: hidden;
+    margin:auto;
+}
+
+.slider .slider-content .img-perla img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50rem;
+     transform: scale(1.9);
+     
+}
+
+.slider .display {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nombre-perla {
+    font-size: 2rem;
+    color: var(--cafe);
+    text-align: center;
+}
+
+.descripcion-perla {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 300;
+    color: var(--cafe);
+}
+
+.btn-seleccionar {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--aqua);
+    padding: 1.4rem;
+    border-radius: 1.5rem;
+    margin-top: 4rem;
+}
+
+.seleccionar {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-seleccionar input[type="checkbox"] {
+    position: relative;
+    border: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    outline: none;
+    -webkit-appearance: none;
+    background:#ffffff;
+    border-radius: 1rem;
+    transition:all 0.3s ease-in-out;
+}
+
+.btn-seleccionar input:checked[type="checkbox"] {
+    background-color: var(--aqua);
+    border: 2px solid white;
+    transition:all 0.3s ease-in-out;
+    outline: none;
+}
+
+.btn-seleccionar input[type="radio"] {
+    position: relative;
+    border: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    outline: none;
+    -webkit-appearance: none;
+    background:#ffffff;
+    border-radius: 1rem;
+    transition:all 0.3s ease-in-out;
+}
+
+.btn-seleccionar input:checked[type="radio"] {
+    background-color: var(--aqua);
+    border: 2px solid white;
+    transition:all 0.3s ease-in-out;
+    outline: none;
+}
+
+.alerta {
+    position: fixed;
+    background-color: rgba(14, 14, 14, 0.733);
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    opacity: 1;
+    pointer-events: all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.cont-alerta{
+    background-color: white;
+    width: 90%;
+    height: 40rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem;
+    z-index: 100000;
+
+}
+
+.cont-alerta .tema-alerta{
+    font-size: 1.5rem;
+    color: #370808;
+    width: 80%;
+    margin: 0rem auto auto auto;
+}
+
+.cont-alerta img{
+    width: 10rem;
+}
+
+.cont-alerta .descripcion-alerta{
+    font-size: 1.4rem;
+    color: #370808;
+    width: 80%;
+    margin: auto;
+}
+
+.cont-alerta .cerrar-alerta{
+    padding: 1.5rem 2.5rem;
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.cuerda{
+    margin-top: 5rem;
+}
+
+/*formulario*/
+
+.select-perlas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.seleccion{
+    font-size: 1.5rem;
+    color: var(--cafe-oscuro);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.select-perlas select{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: #7e7d7d;
+    font-weight: 200;
+    border: 1px solid #ebebeb;
+    outline: none;
+}
+
+.select-perlas select option{
+    outline: none;
+    border: none;
+color: #370808;
+font-weight: 200;
+background-color: white;
+border-radius: 1rem;
+}
+
+.formulario{
+    margin-top: 4rem;
+}
+
+.cont-form{
+    margin-top: 4rem;
+}
+
+.seccion{
+   position: relative;
+   margin-top: 4rem;
+}
+
+.form-input{
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+    border: none;
+    outline: none;
+    border: 1px solid #e2e2e2;
+    /* background-color: #f0f0f08d; */
+    border-radius:1rem;
+}
+
+.form-label{
+    color: #b2b2b2;
+    font-weight:200;
+    margin: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0.3rem;
+    left: 1rem;
+    transform: translateY(1rem);
+    transition: transform .5s, color .3s;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-2.5rem) scale(.8);
+    transform-origin:top left ;
+   color: #585858;
+}
+
+.precio-personalizado{
+    margin-top: 3.5rem;
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--cafe-oscuro);
+}
+
+.ilumina{
+    font-weight: 800;
+    
+}
+
+.error{
+    width: 20rem;
+    text-align: center;
+    color: red;
+    padding-top: 2rem;
+}
