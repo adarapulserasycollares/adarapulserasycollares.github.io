@@ -470,7 +470,7 @@ html {
     /*menu desplegable*/
 
     .nav-desplegable{
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.788) 0%, rgba(29, 1, 1, 0.798) 100%), url(../img/b2.jpg);
+        background: linear-gradient(0deg, #000000c9 0%, #000000cb 100%), url(https://i.ibb.co/zmtSs7M/a.jpg);
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
